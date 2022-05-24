@@ -12,11 +12,12 @@ export default function Nav() {
         className="w-100"
       >
         <Carousel.Item>
-          <Link to="/Feed">
-            <i className="bi bi-house-fill position-relative p-2 position-relative p-2">
+          <Link to="/Feed" className="mb-0 p-0">
+            <i className="bi bi-house-fill position-relative p-2 position-relative">
               <span className="position-absolute bg-danger">99+</span>
             </i>
           </Link>
+          <p>Feed</p>
         </Carousel.Item>
         <Carousel.Item>
           <Link to="/jobs">
@@ -24,6 +25,7 @@ export default function Nav() {
               <span className="position-absolute bg-danger">3</span>
             </i>
           </Link>
+          <p>Network</p>
         </Carousel.Item>
         <Carousel.Item>
           <Link to="/jobs">
@@ -31,6 +33,7 @@ export default function Nav() {
               <span className="position-absolute bg-danger">5</span>
             </i>
           </Link>
+          <p>Jobs</p>
         </Carousel.Item>
         <Carousel.Item>
           <Link to="/Inbox">
@@ -38,6 +41,7 @@ export default function Nav() {
               <span className="position-absolute bg-danger">10</span>
             </i>
           </Link>
+          <p>Messages</p>
         </Carousel.Item>
         <Carousel.Item>
           <Link to="/notifications">
@@ -45,6 +49,7 @@ export default function Nav() {
               <span className="position-absolute bg-danger">12</span>
             </i>
           </Link>
+          <p>Notifications</p>
         </Carousel.Item>
       </Carousel>
     </div>
