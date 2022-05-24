@@ -13,7 +13,6 @@ import Clock from "./components/Clock";
 function App() {
   let navigate = useNavigate();
   const screenName = window.location.pathname;
-  console.log(screenName);
   function goBack() {
     navigate(-1);
   }
