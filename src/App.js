@@ -3,6 +3,7 @@ import {
   Routes,
   Route,
   useNavigate,
+  Link,
 } from "react-router-dom";
 import Nav from "./components/Nav";
 import Posts from "./components/Posts";
@@ -16,9 +17,9 @@ function App() {
   return (
     <div className="app vh-100 d-flex flex-column gap-2 justify-content-center align-items-center">
       <div className="clock-face d-flex flex-column justify-content-around align-items-center position-relative">
-        <span className="logo mt-3">
+        <Link to="/" className="logo mt-3">
           LinkedIn <i className="bi bi-linkedin text-primary"></i>
-        </span>
+        </Link>
         <div id="main">
           <Routes>
             <Route path="/" exact element={<Nav />} />
