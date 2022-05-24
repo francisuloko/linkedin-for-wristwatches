@@ -6,9 +6,11 @@ import {
   Link,
 } from "react-router-dom";
 import Nav from "./components/Nav";
+import Clock from "./components/Clock";
 import Posts from "./components/Posts";
 import Post from "./components/Post";
-import Clock from "./components/Clock";
+import Messages from "./components/Messages";
+import Message from "./components/Message";
 
 function App() {
   let navigate = useNavigate();
@@ -25,6 +27,8 @@ function App() {
             <Route path="/" exact element={<Nav />} />
             <Route path="/posts" exact element={<Posts />} />
             <Route path="/posts/:id" exact element={<Post />} />
+            <Route path="/messages" exact element={<Messages />} />
+            <Route path="/messages/:id" exact element={<Message />} />
           </Routes>
         </div>
         {screenName === "/" ? (
