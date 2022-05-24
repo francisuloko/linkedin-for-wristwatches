@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-export default function Messages() {
-  const messages = [
+export default function Inbox() {
+  const Inbox = [
     {
       id: 1,
       author: "Nedu Omega",
@@ -27,17 +27,25 @@ export default function Messages() {
     { id: 6, author: "Hydrogen Man", headline: "Nich, Nich, Template" },
   ];
 
-  const messagesList = messages.map((message, i) => (
+  const messages = Inbox.map((message, i) => (
     <Link
-      to={"/messages/" + message.id}
+      to={"/Inbox/" + message.id}
       state={{ message }}
       key={message.id}
       className="message d-flex flex-column m-1 py-1 px-2 rounded"
     >
-      <span className="author">{message.author}</span>
+      <span className="d-flex flex-column">
+        <span className="author">{message.author}</span>
+        <span className="time">1 hour ago</span>
+      </span>
       <span className="headline">{message.headline}</span>
     </Link>
   ));
 
-  return <div className="w-100">{messagesList}</div>;
+  return (
+    <div className="w-100">
+      <span className="px-1">Inbox</span>
+      {messages}
+    </div>
+  );
 }

@@ -8,11 +8,11 @@ export default function Nav() {
       <Carousel
         interval={null}
         indicators={false}
-        controls={false}
+        controls={true}
         className="w-100"
       >
         <Carousel.Item>
-          <Link to="/posts">
+          <Link to="/Feed">
             <i className="bi bi-house-fill position-relative p-2 position-relative p-2">
               <span className="position-absolute bg-danger">99+</span>
             </i>
@@ -33,7 +33,7 @@ export default function Nav() {
           </Link>
         </Carousel.Item>
         <Carousel.Item>
-          <Link to="/messages">
+          <Link to="/Inbox">
             <i className="bi bi-chat-dots-fill position-relative p-2">
               <span className="position-absolute bg-danger">10</span>
             </i>

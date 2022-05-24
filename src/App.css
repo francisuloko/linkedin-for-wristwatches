@@ -71,3 +71,7 @@ a:hover {
 .message .author {
   font-weight: bold;
 }
+
+.time {
+  font-size: 9px !important;
+}

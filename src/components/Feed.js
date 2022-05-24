@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-export default function Posts() {
-  const posts = [
+export default function Feed() {
+  const Feed = [
     {
       id: 1,
       author: "Nedu Omega",
@@ -27,17 +27,23 @@ export default function Posts() {
     { id: 6, author: "Hydrogen Man", headline: "Nich, Nich, Template" },
   ];
 
-  const postsList = posts.map((post, i) => (
+  const posts = Feed.map((post, i) => (
     <Link
-      to={"/posts/" + post.id}
+      to={"/Feed/" + post.id}
       state={{ post }}
       key={post.id}
       className="post d-flex flex-column m-1 py-1 px-2 rounded"
     >
-      <span className="author">{post.author}</span>
+      <span className="d-flex flex-column">
+        <span className="author">{post.author}</span>
+        <span className="time">1 hour ago</span>
+      </span>
       <span className="headline">{post.headline}</span>
     </Link>
   ));
 
-  return <div className="w-100">{postsList}</div>;
+  return <div className="w-100">
+    <span className="px-1">Feed</span>
+    {posts}
+  </div>;
 }
