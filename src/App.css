@@ -22,10 +22,12 @@
 }
 
 .clock-face {
-  width: 270px;
+  width: 90%;
   height: 270px;
-  border-radius: 100%;
-  border: 5px solid #333;
+  max-width: 270px;
+  border-radius: 50%;
+  border: 5px solid #555;
+  background: #000;
 }
 
 .logo,

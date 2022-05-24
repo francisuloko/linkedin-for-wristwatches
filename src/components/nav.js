@@ -4,7 +4,7 @@ import Carousel from "react-bootstrap/Carousel";
 export default function Nav() {
   return (
     <div className="nav w-100">
-      <Carousel interval={null} indicators={false} className="w-100 ">
+      <Carousel interval={null} indicators={false} controls={false} className="w-100 ">
         <Carousel.Item>
           <i className="bi bi-house-fill position-relative p-2 position-relative p-2">
             <span className="position-absolute bg-danger">99+</span>
