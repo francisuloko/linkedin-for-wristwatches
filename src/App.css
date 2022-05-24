@@ -1,19 +1,13 @@
 * {
-  /* border: 1px solid white; */
   box-sizing: border-box;
+  text-decoration: none !important;
+}
+a:hover {
+  color: #888 !important;
 }
 ::-webkit-scrollbar {
   width: 0;
 }
-
-::-webkit-scrollbar-track {
-  background-color: #f1f1f1;
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: rgb(179, 179, 179);
-}
-
 .nav {
   width: 75%;
   height: 170px;
