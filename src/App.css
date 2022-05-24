@@ -57,14 +57,17 @@ a:hover {
   color: #888;
 }
 
-.post {
+.post,
+.message {
   background-color: #262626;
   color: #efefefb0;
 }
-.post span {
+.post span,
+.message span {
   font-size: 12px;
 }
 
-.post .author {
+.post .author,
+.message .author {
   font-weight: bold;
 }
