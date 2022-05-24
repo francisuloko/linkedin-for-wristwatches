@@ -4,7 +4,7 @@ import {
   Route,
   useNavigate,
 } from "react-router-dom";
-import Nav from "./components/nav";
+import Nav from "./components/Nav";
 import Posts from "./components/Posts";
 import Post from "./components/Post";
 import Clock from "./components/Clock";
@@ -16,7 +16,7 @@ function App() {
   return (
     <div className="app vh-100 d-flex flex-column gap-2 justify-content-center align-items-center">
       <div className="clock-face d-flex flex-column justify-content-around align-items-center position-relative">
-        <span className="logo mt-2">
+        <span className="logo mt-3">
           LinkedIn <i className="bi bi-linkedin text-primary"></i>
         </span>
         <div id="main">

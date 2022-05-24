@@ -8,7 +8,7 @@ export default function Nav() {
       <Carousel
         interval={null}
         indicators={false}
-        controls={true}
+        controls={false}
         className="w-100"
       >
         <Carousel.Item>
