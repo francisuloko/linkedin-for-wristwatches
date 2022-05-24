@@ -38,7 +38,7 @@ export default function Inbox() {
         <span className="author">{message.author}</span>
         <span className="time">1 hour ago</span>
       </span>
-      <span className="headline">{message.headline}</span>
+      <span className="headline">Recusandae praesentium ratione, quae unde</span>
     </Link>
   ));
 

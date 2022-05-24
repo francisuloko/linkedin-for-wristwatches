@@ -9,7 +9,6 @@ export default function Message() {
       <span className="d-flex flex-column">
         <span>{state.message.author}</span>
       </span>
-      <span>{state.message.headline}</span>
       <span>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
         praesentium ratione, quae unde corrupti, atque, aperiam ullam culpa
