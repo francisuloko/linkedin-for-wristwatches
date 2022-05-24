@@ -1,12 +1,11 @@
 import "./App.css";
-import Clock from "./components/Clock";
-import Layout from "./components/Layout";
+import Nav from "./components/nav";
 
 function App() {
   return (
     <div className="App">
-      <Layout />
-      <Clock />
+      <h1>App</h1>
+      <Nav />
     </div>
   );
 }
