@@ -2,7 +2,8 @@
   box-sizing: border-box;
   text-decoration: none !important;
 }
-a:hover {
+a:hover,
+.notif .headline {
   color: #888 !important;
 }
 ::-webkit-scrollbar {
