@@ -7,6 +7,7 @@ import Post from "./components/Post";
 import Inbox from "./components/Inbox";
 import Message from "./components/Message";
 import Network from "./components/Network";
+import Notifications from "./components/Notification";
 
 function App() {
   let navigate = useNavigate();
@@ -26,6 +27,7 @@ function App() {
             <Route path="/inbox" exact element={<Inbox />} />
             <Route path="/inbox/:id" exact element={<Message />} />
             <Route path="/network" exact element={<Network />} />
+            <Route path="/notification" exact element={<Notifications />} />
           </Routes>
         </div>
         {screenName === "/" ? (
