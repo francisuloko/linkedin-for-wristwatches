@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 export default function Inbox() {
-  const Inbox = [
+  const inbox = [
     {
       id: 1,
       author: "Nedu Omega",
@@ -27,7 +27,7 @@ export default function Inbox() {
     { id: 6, author: "Hydrogen Man", headline: "Nich, Nich, Template" },
   ];
 
-  const messages = Inbox.map((message, i) => (
+  const messages = inbox.map((message) => (
     <Link
       to={"/Inbox/" + message.id}
       state={{ message }}
