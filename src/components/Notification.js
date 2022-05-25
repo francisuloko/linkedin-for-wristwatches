@@ -15,23 +15,23 @@ export default function Notifications() {
     },
     {
       id: 3,
-      message: "This post is popular at Influencer",
+      message: "This post is popular at MicrosoFT",
       headline: "Hooked: Everything React Hooks",
     },
   ];
 
-  const alerts = notifications.map((alert, i) => (
+  const alerts = notifications.map((alert) => (
     <Link
-      to={"/Notification/" + alert.id}
+      to={"/notification/" + alert.id}
       state={{ alert }}
       key={alert.id}
-      className="alert d-flex flex-column m-1 py-1 px-2 rounded"
+      className="user d-flex flex-column m-1 py-1 px-2 rounded"
     >
       <span className="d-flex flex-column">
         <span className="message">{alert.message}</span>
+        <span className="headline">{alert.headline}</span>
         <span className="time">1 hour ago</span>
       </span>
-      <span className="headline">{alert.headline}</span>
     </Link>
   ));
 
