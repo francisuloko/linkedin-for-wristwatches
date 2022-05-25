@@ -6,6 +6,7 @@ import Feed from "./components/Feed";
 import Post from "./components/Post";
 import Inbox from "./components/Inbox";
 import Message from "./components/Message";
+import Network from "./components/Network";
 
 function App() {
   let navigate = useNavigate();
@@ -20,10 +21,11 @@ function App() {
         <div id="main">
           <Routes>
             <Route path="/" exact element={<Nav />} />
-            <Route path="/Feed" exact element={<Feed />} />
-            <Route path="/Feed/:id" exact element={<Post />} />
-            <Route path="/Inbox" exact element={<Inbox />} />
-            <Route path="/Inbox/:id" exact element={<Message />} />
+            <Route path="/feed" exact element={<Feed />} />
+            <Route path="/feed/:id" exact element={<Post />} />
+            <Route path="/inbox" exact element={<Inbox />} />
+            <Route path="/inbox/:id" exact element={<Message />} />
+            <Route path="/network" exact element={<Network />} />
           </Routes>
         </div>
         {screenName === "/" ? (

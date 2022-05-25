@@ -58,7 +58,8 @@ a:hover {
 }
 
 .post,
-.message {
+.message,
+.user {
   background-color: #262626;
   color: #efefefb0;
 }
