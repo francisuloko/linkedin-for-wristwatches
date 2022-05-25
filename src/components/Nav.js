@@ -44,7 +44,7 @@ export default function Nav() {
           <p>Messages</p>
         </Carousel.Item>
         <Carousel.Item>
-          <Link to="/notifications">
+          <Link to="/notification">
             <i className="bi bi-bell-fill position-relative p-2">
               <span className="position-absolute bg-danger">12</span>
             </i>
