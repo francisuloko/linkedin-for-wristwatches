@@ -27,9 +27,9 @@ export default function Notifications() {
       key={alert.id}
       className="user d-flex flex-column m-1 py-1 px-2 rounded"
     >
-      <span className="d-flex flex-column">
+      <span className="notif d-flex flex-column">
         <span className="message">{alert.message}</span>
-        <span className="headline">{alert.headline}</span>
+        <span className="headline text-secondary">{alert.headline}</span>
         <span className="time">1 hour ago</span>
       </span>
     </Link>
