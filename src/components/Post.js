@@ -17,7 +17,7 @@ export default function Post() {
         ab incidunt amet?
       </span>
       <span className="d-flex justify-content-between align-items-center">
-        <span>5 likes</span>
+        <span>{state.post.like}</span>
         <i className="bi bi-hand-thumbs-up fs-4"></i>
       </span>
     </div>
