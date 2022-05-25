@@ -12,6 +12,6 @@ function Clock() {
       clearInterval(timerId);
     };
   }, []);
-  return <span className="clock p-2">{date.toLocaleTimeString()}</span>;
+  return <span className="clock p-2">{date.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}</span>;
 }
 export default Clock;
