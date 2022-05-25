@@ -2,6 +2,9 @@
   box-sizing: border-box;
   text-decoration: none !important;
 }
+body {
+  background: #fff !important;
+}
 a:hover,
 .notif .headline {
   color: #888 !important;
@@ -36,18 +39,16 @@ a:hover,
   overflow-y: scroll;
   width: 75%;
   height: 170px;
-  /* border: 2px solid red !important; */
 }
 .carousel-item {
   text-align: center;
 }
 
 .clock-face {
-  width: 90%;
-  height: 270px;
-  max-width: 270px;
+  height: 280px;
+  max-width: 280px;
   border-radius: 50%;
-  border: 5px solid #555;
+  border: 0 solid grey;
   background: rgb(0, 0, 0);
 }
 
@@ -76,4 +77,83 @@ a:hover,
 
 .time {
   font-size: 9px !important;
+}
+
+/* Watch Container */
+.watch-container {
+  width: 300px;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+/* Watch */
+.watch {
+  position: relative;
+  width: 300px;
+  height: 300px;
+}
+
+/* Watch Face */
+.watch-face {
+  width: 300px;
+  height: 300px;
+  border-radius: 100%;
+  background: #3F484A; /* Dial colour */
+  border: 10px solid #333; /* Face border */
+  box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.5), 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.watch-face-outline-point {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: #777;
+  left: 145px;
+  top: 24px;
+  border-radius: 100%;
+  -webkit-transform-origin: 50% 126px;
+  transform-origin: 50% 126px;
+}
+
+
+/* Watch Crown */
+.watch-crown {
+  position: relative;
+  z-index: -1;
+  width: 15px;
+  height: 26px;
+  top: -163px;
+  left: 295px;
+  border-radius: 5px;
+  background: grey;
+  border-right: 2px solid rgba(0, 0, 0, 0.05);
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Watch Straps */
+.watch-strap-top {
+  position: relative;
+  z-index: -1;
+  width: 120px;
+  height: 150px;
+  left: 90px;
+  bottom: -20px;
+  background: transparent;
+  border-radius: 10px 10px 0 0;
+}
+
+.watch-strap-bottom {
+  position: relative;
+  z-index: -1;
+  width: 120px;
+  height: 150px;
+  left: 90px;
+  bottom: 20px;
+  background: transparent;
+  border-radius: 0 0 10px 10px;
+  color: rgba(0, 0, 0, 0.2);
+  font-weight: bold;
+  text-align: center;
+  padding-top: 120px;
+  text-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.5);
 }
