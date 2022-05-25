@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import { useLocation } from "react-router-dom";
 
 export default function Post() {
   const { state } = useLocation();
+  const [like, setLike] = useState(state.post.like);
 
   return (
     <div className="post rounded p-3 mx-2 rounded d-flex flex-column gap-2 fs-6">
@@ -17,8 +18,8 @@ export default function Post() {
         ab incidunt amet?
       </span>
       <span className="d-flex justify-content-between align-items-center">
-        <span>{state.post.like} likes</span>
-        <i className="bi bi-hand-thumbs-up fs-4"></i>
+        <span>{like} likes</span>
+        <i onClick={() => setLike(like + 1)} className="bi bi-hand-thumbs-up fs-4"></i>
       </span>
     </div>
   );
