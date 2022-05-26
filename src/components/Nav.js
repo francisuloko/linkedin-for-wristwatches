@@ -12,12 +12,12 @@ export default function Nav() {
         className="w-100"
       >
         <Carousel.Item>
-          <Link to="/feed" className="mb-0 p-0">
+          <Link to="/home" className="mb-0 p-0">
             <i className="bi bi-house-fill position-relative p-2 position-relative">
               <span className="position-absolute bg-danger">99+</span>
             </i>
           </Link>
-          <p>Feed</p>
+          <p>Home</p>
         </Carousel.Item>
         <Carousel.Item>
           <Link to="/network">
@@ -41,7 +41,7 @@ export default function Nav() {
               <span className="position-absolute bg-danger">10</span>
             </i>
           </Link>
-          <p>Messages</p>
+          <p>Messaging</p>
         </Carousel.Item>
         <Carousel.Item>
           <Link to="/notification">

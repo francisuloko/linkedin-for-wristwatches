@@ -28,7 +28,7 @@ function App() {
                 <div id="main">
                   <Routes>
                     <Route path="/" exact element={<Nav />} />
-                    <Route path="/feed" exact element={<Feed />} />
+                    <Route path="/home" exact element={<Feed />} />
                     <Route path="/feed/:id" exact element={<Post />} />
                     <Route path="/inbox" exact element={<Inbox />} />
                     <Route path="/inbox/:id" exact element={<Message />} />
