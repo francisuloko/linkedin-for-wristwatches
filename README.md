@@ -43,7 +43,7 @@ To get a local copy up and running follow these simple example steps.
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://francisuloko.github.io/linkedin-for-wristwatches/issues).
+Feel free to check the [issues page](https://github.com/linkedin-for-wristwatches/issues).
 
 ## Show your support
 
