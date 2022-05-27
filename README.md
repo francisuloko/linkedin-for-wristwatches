@@ -1,6 +1,6 @@
-# LinkedIn Demo App for Wristwatches
+# LinkedIn for Wristwatches
 
-> A minimalistic app that shows just enough features for you to stay up-to-date with your LinkedIn Community.
+> A minimalistic demo app showing just enough features for you to stay up-to-date with your LinkedIn Community.
 
 ![Recommendation](./public/Screenshot%20from%202022-05-26%2001-50-00.png)
 
